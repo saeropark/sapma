@@ -42,8 +42,9 @@ export default class SAPmaProject extends Component {
           />
         }*/
       />
-    )
-  }
+     );
+     
+   }
 }
         //const { page } = this.state;
         //var self = this;

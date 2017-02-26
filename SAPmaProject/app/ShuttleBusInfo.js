@@ -1,10 +1,10 @@
 import React, { Component} from 'react';
 import {View, Text,  StyleSheet } from 'react-native';
 
-export default class ShuttleBusInfo extends Component {
+class ShuttleBusInfo extends Component {
     render() {
         var bus = this.props.bus;
-       // var features = (typeof bus.features !== 'undefined') ? bus.features : '';
+       var features = (typeof bus.features !== 'undefined') ? bus.features : 'no features';
         return (
             <View style={styles.container}>        
                 <Text style={styles.features}>Testing: {bus.features}</Text>
@@ -25,3 +25,4 @@ var styles = StyleSheet.create({
     }
 });
 
+module.exports = ShuttleBusInfo;

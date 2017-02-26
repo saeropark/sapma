@@ -85,12 +85,13 @@ export default class MyScene extends Component {
     }
 
     showBusDetail(bus) {
-                    this.props.navigator.push({
-                        title: bus.name,
-                        component: ShuttleBusInfo,
-                        passProps: {bus}            
-                    });
-                }
+        this.props.navigator.push({
+            id: showBus,
+            title: bus.name,
+            component: ShuttleBusInfo,
+            passProps: {bus}            
+        });
+    }
 
 }
 
